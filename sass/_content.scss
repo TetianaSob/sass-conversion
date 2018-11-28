@@ -1,0 +1,31 @@
+@mixin alert-base() {
+  width: 50%;
+  height: 100px;
+  border: 1px solid black;
+  font: {
+    size: 1.2rem;
+    family: Avenir, sans-serif;
+  }
+  @content;
+}
+.alert {
+  @include alert-base;
+}
+
+@mixin small-breakpoint {
+  @media screen and (min-width: $breakpoit-small){
+    @content;
+  }
+}
+
+@mixin med-breakpoint {
+  @media screen and (min-width: $breakpoit-med){
+    @content;
+  }
+}
+
+// @mixin 1rg-breakpoint {
+//   @media screen and (min-width: $breakpoit-med){
+//     @content;
+//   }
+// }

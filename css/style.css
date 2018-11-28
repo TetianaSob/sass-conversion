@@ -1,0 +1,82 @@
+/* Base */
+.card {
+  height: 400px;
+  width: 400px;
+  background-color: #949494;
+  transition: all 0,5s ease;
+}
+
+body {
+  font-family: Halvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400px;
+}
+
+.feature {
+  font-family: Avenir, Helvetica, Arial, sans-sarif;
+  font-size: 1.1rem;
+  font-weight: 400px;
+}
+
+/* Nesting */
+li > a {
+  text-decoration: none;
+}
+
+li > a:hover {
+  text-decoration: underline;
+}
+
+li > a:visited {
+  color: red;
+}
+
+li > a > span {
+  font-size: 3rem;
+}
+
+li > a .feature-link {
+  font-weight: 900px;
+  }
+/* Extends */
+
+  .alert-critical, .alert {
+  width: 50%;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  font-family: Avenir, sans-sarif;
+}
+
+.alert-critical {
+  color: red;
+}
+
+/* Mixins */
+ feature {
+  font-family: Avenir, Helvetica, Arial, sans-sarif;
+  font-size: 1.1rem;
+   font-weight: 400px;
+ }
+
+@media screen and (min-width: 960px) {
+  body.contrnt ul li a {
+    color: green;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  body.content ul li a {
+    color: red;;
+  }
+}
+
+body .content .card {
+  width: 400px;
+  height: 400px;
+}
+@media screen and (min-width: 480px) {
+  body .content .card {
+    font-size: 20px;
+  }
+}

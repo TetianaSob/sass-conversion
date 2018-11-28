@@ -1,0 +1,58 @@
+
+//base
+
+.card {
+height: 400px;
+width: 400px;
+background-color: #949494;
+transition: all 0.5s ease;
+}
+
+// body {
+//   @include font-stack-body;
+// }
+//
+// .feature {
+//   @include font-stack-feature;
+// }
+// _extends
+
+
+.alert {
+  width: 50%;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  font-family: Avenir, sans-derif;
+}
+
+.alert-critical {
+  width: 50%;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  font-family: Avenir, sans-derif;
+  color: yellow;
+}
+
+ p {
+    color: #5e5fa6;
+    width: 30vw;
+ }
+
+ p.feature {
+     text-decoration: underline;
+ }
+
+a {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+//@media all and (min-width: 701px) and (max-width: 900px)
+
+@media(min-width: 701px) and (max-width: 900px) {
+body {
+  background-color: red;
+}
+}
