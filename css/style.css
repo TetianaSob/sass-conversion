@@ -53,11 +53,6 @@ li > a .feature-link {
 }
 
 /* Mixins */
- feature {
-  font-family: Avenir, Helvetica, Arial, sans-sarif;
-  font-size: 1.1rem;
-   font-weight: 400px;
- }
 
 @media screen and (min-width: 960px) {
   body.contrnt ul li a {
